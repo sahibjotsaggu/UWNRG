@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	// Loading Animation
-	$("#loading_bar").animate({'width':'100%'}, 1500);
+	$("#loading_bar").animate({'width':'100%'}, 1500, "easeInExpo");
 	$("#loading_bar").animate({'height':'100%', 'top':'0%'});
 	$("#loading_bar").fadeOut();
 	$("aside").fadeIn();

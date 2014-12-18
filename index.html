@@ -89,6 +89,44 @@
 			text-decoration: underline;
 		}
 
+		aside #social_buttons {
+			position: absolute;
+			bottom: 50px;
+			left: calc(50% - 50px);
+			width: 100px;
+			height: 50px;
+		}
+
+		aside #social_buttons ul {
+			list-style-type: none;
+		}
+
+		aside #social_buttons ul li a {
+			float: left;
+			text-decoration: none;
+			width: 50px;
+			height: 50px;
+			-webkit-transition: background-image 0.5s;
+		}
+
+		aside #social_buttons ul li a#facebook {
+			background: url("fb.png") no-repeat center center;
+			background-size: cover;
+		}
+
+		aside #social_buttons ul li a#facebook:hover {
+			background-image: url("fb_invert.png");
+		}
+
+		aside #social_buttons ul li a#twitter {
+			background: url("twitter.png") no-repeat center center;
+			background-size: cover;
+		}
+
+		aside #social_buttons ul li a#twitter:hover {
+			background-image: url("twitter_invert.png");
+		}
+
 		main {
 			position: absolute;
 			top: 0px;
@@ -116,9 +154,15 @@
 					<li><a href="robots.html">OUR ROBOTS</a></li>
 					<li><a href="#">EVENTS</a></li>
 					<li><a href="#">SPONSORS</a></li>
-					<li><a href="#">ABOUT US</a></li>
+					<li><a href="about.html">ABOUT US</a></li>
 				</ul>
 			</div> <!-- end options div -->
+			<div id="social_buttons">
+				<ul>
+					<li><a href="#" id="twitter"></a></li>
+					<li><a href="#" id="facebook"></a></li>
+				</ul>
+			</div> <!-- end social_buttons div -->
 		</aside>
 
 		<main>
@@ -133,7 +177,7 @@
 			</div>
 			<div id="wrapper4">
 				<span>SOME TEXT</span>
-			</div>
+			</div>			
 		</main>
 	</body>
 </html>

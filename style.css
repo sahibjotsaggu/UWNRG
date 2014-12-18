@@ -64,24 +64,24 @@ body {
 	src: url("FeGPrm27C.otf");
 }
 
-/*
+
 ::-webkit-scrollbar {
     width: 10px;
     margin-right: 10px;
 }
  
-/* Track 
+/* Track */
 ::-webkit-scrollbar-track {
 	background: #FFF;
 }
  
-/* Handle 
+/* Handle */
 ::-webkit-scrollbar-thumb {
 	width: 100px;
     border-radius: 5px;
-    background: #AAA; 
+    background: #222; 
 }
-*/
+
 
 #loading_screen #loading_bar {
 	position: absolute;
@@ -155,6 +155,44 @@ aside #options ul li a#onlink {
 	text-decoration: underline;
 }
 
+aside #social_buttons {
+	position: absolute;
+	bottom: 50px;
+	left: calc(50% - 50px);
+	width: 100px;
+	height: 50px;
+}
+
+aside #social_buttons ul {
+	list-style-type: none;
+}
+
+aside #social_buttons ul li a {
+	float: left;
+	text-decoration: none;
+	width: 50px;
+	height: 50px;
+	-webkit-transition: background-image 0.5s;
+}
+
+aside #social_buttons ul li a#facebook {
+	background: url("fb.png") no-repeat center center;
+	background-size: cover;
+}
+
+aside #social_buttons ul li a#facebook:hover {
+	background-image: url("fb_invert.png");
+}
+
+aside #social_buttons ul li a#twitter {
+	background: url("twitter.png") no-repeat center center;
+	background-size: cover;
+}
+
+aside #social_buttons ul li a#twitter:hover {
+	background-image: url("twitter_invert.png");
+}
+
 main {
 	position: absolute;
 	top: 0px;
@@ -177,7 +215,7 @@ main {
 
 #wrapper1 {
 	top: 0%;
-	background: url("images/qnc.jpg") no-repeat center center fixed;
+	background: url("images/pic2.jpg") no-repeat center center fixed;
 }
 
 #wrapper2 {
@@ -199,7 +237,7 @@ span {
 	display: table-cell;
 	vertical-align: middle;
 	font-family: bj;
-	font-size: 100px;
+	font-size: 150px;
 	color: #FFF;
 }
 
@@ -207,7 +245,7 @@ span {
 
 /* team.html */
 
-#team_banner, #robot_heading {
+#team_banner, #robot_heading, #map_header {
 	position: absolute;
 	top: 0px;
 	left: 0px;
@@ -218,20 +256,77 @@ span {
 	text-align: center;
 }
 
+#map_header {
+	height: 600px;
+	background: #FFFFF9;
+}
+
+#map {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	border: none;
+}
+
+#contact_us {
+	position: absolute;
+	top: 125px;
+	right: 0px;
+	width: 500px;
+	height: 300px;
+	background: #222;
+}
+
+#contact_us h1 {
+	font-family: bj;
+	color: #FFF;
+	padding: 10px;
+	font-size: 40px;
+}
+
+#contact_us h3 {
+	font-family: sj;
+	padding: 5px;
+	color: #FFF;
+}
+
+#contact_us #location_add {
+	position: absolute;
+	top: 110px;
+	left: calc(50% - 175px);
+	width: 350px;
+	height: 100px;
+	font-family: Segoe UI Light;
+	color: #FFF;
+}
+
+#contact_us #m_point {
+	width: 30px;
+}
+
+#team_banner {
+	background: url("images/FLIPP-76_Banner-Template.png") no-repeat;
+	background-size: cover;
+}
+
 #robot_heading {
 	background: transparent;
 }
 
 #robot_heading span {
-	color: #000;
+	font-size: 90px;
+	color: #222;
 }
 
 #team_banner span {
-	font-family: sj;
+	font-family: bj;
 	font-size: 80px;
+	color: #222;
 }
 
-#heading {
+#heading, #about_heading {
 	position: absolute;
 	top: 350px;
 	left: 0px;
@@ -239,6 +334,11 @@ span {
 	text-align: center;
 	font-family: bj;
 	font-size: 40px;
+	color: #222;
+}
+
+#about_heading {
+	top: 650px;
 }
 
 #t_p1, #t_p2 {
@@ -255,15 +355,27 @@ span {
 	top: 570px;
 }
 
+#mission_statement {
+	position: absolute;
+	top: 720px;
+	left: calc(50% - 325px);
+	width: 650px;
+	height: 150px;
+	font-family: Segoe UI Light;
+	font-size: 18px;
+}
+
 #pictures {
 	position: absolute;
 	top: 710px;
-	left: calc(50% - 310px);
+	/*left: calc(50% - 310px);*/
+	left: 0px;
 }
 
 #pictures ul {
 	list-style-type: none;
-	width: 620px;
+	/*width: 620px;*/
+	width: 100%;
 	height: 620px;
 }
 
