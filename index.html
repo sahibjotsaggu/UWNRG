@@ -14,8 +14,100 @@
 			window.location = ""
 		}, 1000);
 		</script>-->
+
+		<style type="text/css">
+		#loading_screen #loading_bar {
+			position: absolute;
+			top: calc(50% - 1.5px);
+			left: 0px;
+			width: 0%;
+			height: 3px;
+			background: #555;
+			z-index: 3;
+		}
+
+		aside {
+			position: fixed;
+			top: 0px;
+			left: -20%;
+			width: 20%;
+			height: 100%;
+			background: #222;
+			display: none;
+		}
+
+		aside #title {
+			position: absolute;
+			top: 200px;
+			left: 50px;
+			font-family: l_gothic;
+			font-size: 75px;
+		}
+
+		aside #title a {
+			text-decoration: none;
+			color: #B63A3A;
+		}
+
+		aside #options {
+			position: absolute;
+			top: 300px;
+			left: 0px;
+			width: 100%;
+			/*background-color: red;*/
+		}
+
+		aside #options ul {
+			list-style-type: none;
+		}
+
+		aside #options ul li {
+			display: block;
+			width: 100%;
+			height: 35px;
+			text-indent: 80px;
+			font-family: sj;
+			font-size: 13px;
+			font-weight: bold;
+			line-height: 35px;
+		}
+
+
+		aside #options ul li a {
+			float: left;
+			text-decoration: none;
+			width: 100%;
+			height: 35px;
+			color: #FFF;
+		}
+
+		aside #options ul li a:hover {
+			text-decoration: underline;
+		}
+
+		aside #options ul li a#onlink {
+			text-decoration: underline;
+		}
+
+		main {
+			position: absolute;
+			top: 0px;
+			right: -80%;
+			width: 80%;
+			height: 100%;
+			/*display: none;*/
+		}
+
+		</style>
+
+
 	</head>
 	<body>
+
+		<section id="loading_screen">
+			<div id="loading_bar"></div>
+		</section>
+
 		<aside>
 			<div id="title"><a href="#">LOGO HERE</a></div>
 			<div id="options">

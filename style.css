@@ -59,6 +59,11 @@ body {
 	src: url("BJSJ/Slim Joe.otf");
 }
 
+@font-face {
+	font-family: great_primer;
+	src: url("FeGPrm27C.otf");
+}
+
 /*
 ::-webkit-scrollbar {
     width: 10px;
@@ -78,10 +83,20 @@ body {
 }
 */
 
+#loading_screen #loading_bar {
+	position: absolute;
+	top: calc(50% - 1.5px);
+	left: 0px;
+	width: 0%;
+	height: 3px;
+	background: #555;
+	z-index: 3;
+}
+
 aside {
 	position: fixed;
 	top: 0px;
-	left: 0px;
+	left: 0%;
 	width: 20%;
 	height: 100%;
 	background: #222;
@@ -143,7 +158,7 @@ aside #options ul li a#onlink {
 main {
 	position: absolute;
 	top: 0px;
-	left: 20%;
+	right: 0%;
 	width: 80%;
 	height: 100%;
 }
@@ -223,15 +238,16 @@ span {
 	width: 100%;
 	text-align: center;
 	font-family: bj;
+	font-size: 40px;
 }
 
 #t_p1, #t_p2 {
 	position: absolute;
 	top: 420px;
-	left: calc(50% - 300px);
-	width: 600px;
+	left: calc(50% - 325px);
+	width: 650px;
 	height: 150px;
-	font-family: Garamond;
+	font-family: Segoe UI Light;
 	font-size: 18px;
 }
 
