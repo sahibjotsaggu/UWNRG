@@ -16,137 +16,43 @@
 		</script>-->
 
 		<style type="text/css">
-		#loading_screen #loading_bar {
-			position: absolute;
-			top: calc(50% - 1.5px);
-			left: 0px;
-			width: 0%;
-			height: 3px;
-			background: #555;
-			z-index: 3;
-		}
-
-		aside {
-			position: fixed;
-			top: 0px;
-			left: -20%;
-			width: 20%;
-			height: 100%;
-			background: #222;
-			display: none;
-		}
-
-		aside #title {
-			position: absolute;
-			top: 200px;
-			left: 50px;
-			font-family: l_gothic;
-			font-size: 75px;
-		}
-
-		aside #title a {
-			text-decoration: none;
-			color: #B63A3A;
-		}
-
-		aside #options {
-			position: absolute;
-			top: 300px;
-			left: 0px;
-			width: 100%;
-			/*background-color: red;*/
-		}
-
-		aside #options ul {
-			list-style-type: none;
-		}
-
-		aside #options ul li {
-			display: block;
-			width: 100%;
-			height: 35px;
-			text-indent: 80px;
-			font-family: sj;
-			font-size: 13px;
-			font-weight: bold;
-			line-height: 35px;
-		}
-
-
-		aside #options ul li a {
-			float: left;
-			text-decoration: none;
-			width: 100%;
-			height: 35px;
-			color: #FFF;
-		}
-
-		aside #options ul li a:hover {
-			text-decoration: underline;
-		}
-
-		aside #options ul li a#onlink {
-			text-decoration: underline;
-		}
-
-		aside #social_buttons {
-			position: absolute;
-			bottom: 50px;
-			left: calc(50% - 50px);
-			width: 100px;
-			height: 50px;
-		}
-
-		aside #social_buttons ul {
-			list-style-type: none;
-		}
-
-		aside #social_buttons ul li a {
-			float: left;
-			text-decoration: none;
-			width: 50px;
-			height: 50px;
-			-webkit-transition: background-image 0.5s;
-		}
-
-		aside #social_buttons ul li a#facebook {
-			background: url("fb.png") no-repeat center center;
-			background-size: cover;
-		}
-
-		aside #social_buttons ul li a#facebook:hover {
-			background-image: url("fb_invert.png");
-		}
-
-		aside #social_buttons ul li a#twitter {
-			background: url("twitter.png") no-repeat center center;
-			background-size: cover;
-		}
-
-		aside #social_buttons ul li a#twitter:hover {
-			background-image: url("twitter_invert.png");
-		}
-
-		main {
-			position: absolute;
-			top: 0px;
-			right: -80%;
-			width: 80%;
-			height: 100%;
-			/*display: none;*/
-		}
+	
 
 		</style>
 
 
 	</head>
 	<body>
-
+<!--
 		<section id="loading_screen">
 			<div id="loading_bar"></div>
-		</section>
+		</section>-->
 
-		<aside>
+		<div id="topbar">
+			<div id="top_title"><a href="#">LOGO HERE</a></div>
+			<div id="top_hor_nav_buttons">
+				<ul>
+					<li><a href="team.html"><span id="nav_span">MEET THE TEAM</span></a></li>
+					<li><a href="robots.html"><span id="nav_span">OUR ROBOTS</span></a></li>
+					<li><a href="#"><span id="nav_span">EVENTS</span></a></li>
+					<li><a href="#"><span id="nav_span">SPONSORS</span></a></li>
+					<li><a href="about.html"><span id="nav_span">ABOUT US</span></a></li>
+				</ul>
+			</div>
+			<div id="nav_button"></div>
+		</div>
+
+		<nav id="topnav">
+			<ul>
+				<li><a href="team.html">MEET THE TEAM</a></li>
+				<li><a href="robots.html">OUR ROBOTS</a></li>
+				<li><a href="#">EVENTS</a></li>
+				<li><a href="#">SPONSORS</a></li>
+				<li><a href="about.html">ABOUT US</a></li>
+			</ul>
+		</nav>	
+
+		<aside id="left_nav">
 			<div id="title"><a href="#">LOGO HERE</a></div>
 			<div id="options">
 				<ul>

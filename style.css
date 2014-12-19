@@ -67,13 +67,13 @@ body {
 
 ::-webkit-scrollbar {
     width: 10px;
-    margin-right: 10px;
+    background: transparent;
 }
  
-/* Track */
+/* Track 
 ::-webkit-scrollbar-track {
 	background: #FFF;
-}
+}*/
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
@@ -91,6 +91,115 @@ body {
 	height: 3px;
 	background: #555;
 	z-index: 3;
+}
+
+#topbar {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 70px;
+	background: #222;
+	z-index: 3;
+	display: none;
+}
+
+#topbar #top_title {
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	font-family: l_gothic;
+	font-size: 40px;
+}
+
+#topbar #top_title a {
+	text-decoration: none;
+	color: #B63A3A;
+}
+
+#topbar #nav_button {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	width: 40px;
+	height: 40px;
+	background: url('images/horizontal_lines.png') no-repeat center center;
+	background-size: cover;
+	cursor: pointer;
+}
+
+#topbar #top_hor_nav_buttons {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 770px;
+	height: 70px;
+}
+
+#topbar #top_hor_nav_buttons ul {
+	list-style-type: none;
+}
+
+#topbar #top_hor_nav_buttons ul li {
+	display: inline-block;
+	width: 150px;
+	height: 70px;
+}
+
+#topbar #top_hor_nav_buttons ul li a {
+	float: left;
+	width: 150px;
+	height: 70px;
+	text-align: center;
+	text-decoration: none;
+	display: table;
+	color: #FFF;
+}
+
+#topbar #top_hor_nav_buttons ul li a:hover {
+	text-decoration: underline;
+}
+
+#topbar #top_hor_nav_buttons ul li a span#nav_span {
+	display: table-cell;
+	vertical-align: middle;
+	font-size: 15px;
+	font-family: sj;
+	font-weight: bold;
+	color: #FFF;
+}
+
+#topnav {
+	position: absolute;
+	top: -250px;
+	left: 0px;
+	width: 100%;
+	height: 250px;
+	z-index: 2;
+}
+
+#topnav ul {
+	list-style-type: none;
+}
+
+#topnav ul li {
+	display: block;
+	width: 100%;
+	height: 50px;
+}
+
+#topnav ul li a {
+	float: left;
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	text-decoration: none;
+	font-family: sj;
+	color: #FFF;
+	font-weight: bold;
+	font-size: 13px;
+	background: #222;
 }
 
 aside {
@@ -364,62 +473,57 @@ span {
 	font-family: Segoe UI Light;
 	font-size: 18px;
 }
-
+/*
 #pictures {
 	position: absolute;
 	top: 710px;
-	/*left: calc(50% - 310px);*/
+	/*left: calc(50% - 310px);
 	left: 0px;
-}
+}*/
 
-#pictures ul {
-	list-style-type: none;
-	/*width: 620px;*/
-	width: 100%;
-	height: 620px;
-}
+		#pictures {
+			position: absolute;
+			top: 750px;
+			left: calc(50% - 375px);
+			width: 750px;
+			height: 600px;
+		}
 
-#pictures ul li {
-	display: inline-block;
-	float: left;
-	width: 150px;
-	height: 150px;
-	background: url("images/avatar.png") no-repeat center center;
-	cursor: pointer;
-	opacity: 0.2;
-	-webkit-transition: opacity 0.5s, background 0.5s;
-}
+		#pictures ul {
+			margin: 0px;
+			padding: 0px;
+			list-style-type: none;
+			width: 750px;
+			height: 600px;
+		}
 
-#pictures ul li:hover {
-	opacity: 1;
-	background: url("images/avatar2.png") no-repeat center center;
-}
+		#pictures ul li {
+			display: inline;
+			float: left;
+			width: 150px;
+			height: 200px;
+			background: url("images/avatar.png") no-repeat center center;
+			text-align: center;
+			line-height: 200px;
+			cursor: pointer;
+		}
 
-#pictures ul li div {
-	position: absolute;
-	width: 150px;
-	height: 60px;
-	text-align: center; 
-	background: #222;
-	line-height: 28px;
-	color: #FFF;
-	margin-top: -30px;
-	opacity: 0;
-	-webkit-transition: opacity 0.5s;
-	display: table;
-	padding-left: 5px;
-	padding-right: 5px;
-}
+		#pictures ul li div {
+			width: 150px;
+			height: 200px;
+			background: rgba(182,58,58,0.8);
+			-webkit-transition: margin-top 0.5s, height 0.5s, line-height 0.5s, background 0.5s;
+			color: #FFF;
+			font-family: Segoe UI Light;
+			font-size: 18px;
+		}
 
-#pictures ul li div span {
-	font-size: 15px;
-	font-family: sj;
-	font-weight: bold;
-}
-
-#pictures ul li:hover div {
-	opacity: 1;
-}
+		#pictures ul li:hover div {
+			margin-top: -50px;
+			height: 50px;
+			line-height: 50px;
+			background: #333;
+		}
 
 /* END team.html */
 
@@ -464,33 +568,70 @@ span {
 /* END robots.html */
 
 /* Media Queries */
+
+
+
+@media only screen and (max-width: 1400px) {
+	aside {
+		display: none;
+	}
+	main {
+		width: 100%;
+		left: 0%;
+	}
+	#topbar {
+		display: block;
+	}
+	#nav_button {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	span {
+		font-size: 100px;
+	}
+	#nav_button {
+		display: block;
+	}	
+	#top_hor_nav_buttons {
+		display: none;
+	}	
+}
+
+@media only screen and (max-width: 660px) {
+	span {
+		font-size: 80px;
+	}
+}
+
+@media only screen and (max-width: 550px) {
+	span {
+		font-size: 60px;
+	}
+}
+
+@media only screen and (max-width: 390px) {
+	span {
+		font-size: 50px;
+	}
+}
+
 /*
-@media only screen and (min-width: 100px) {
-	main {
-		background: white;
-	}
+@media only screen and (max-width: 480px) {
+
 }
 
-@media only screen and (min-width: 480px) {
-	main {
-		background: yellow;
-	}
+@media only screen and (max-width: 768px) {
+
 }
 
-@media only screen and (min-width: 768px) {
-	main {
-		background: green;
+@media only screen and (max-width: 1370px) {
+	#left_nav {
+		left: -20%;
 	}
 }
+/*
+@media only screen and (max-width: 1525px) {
 
-@media only screen and (min-width: 1140px) {
-	main {
-		background: purple;
-	}
-}
-
-@media only screen and (min-width: 1200px) {
-	main {
-		background: white;
-	}
 }*/
